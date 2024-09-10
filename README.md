@@ -26,7 +26,9 @@
 - ## 원격 연결
 
     ```cmd
-    arp -a
-    ```
+    arp -a```
     > [pc에 랜선으로 다이랙트 연결](https://eagerbeaver.tistory.com/133#google_vignette)  
-    > [Rsync 환경 설정하기](https://1byte.tistory.com/49)  
+    > [연결하기 최신](https://shshsh.tistory.com/163)  
+    > [Rsync 환경 설정하기](https://1byte.tistory.com/49)
+      Password raspberry
+    
