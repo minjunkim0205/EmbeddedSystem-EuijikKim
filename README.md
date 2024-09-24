@@ -30,5 +30,8 @@
     arp -a
     ```
     ```cmd
+    ssh pi@0.0.0.0
+    ```
+    ```cmd
     sudo shutdown -h now
     ```
