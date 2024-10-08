@@ -35,3 +35,17 @@
     ```cmd
     sudo shutdown -h now
     ```
+    [Gradle 설치하기](https://park-jongseok.github.io/languages/java/2019/11/01/installing-gradle.html)  
+    [VSCode JAR 파일 만들기](https://coding-restaurant.tistory.com/535)
+    ```cmd
+    javac -cp ".;lib/pi4j-core.jar" -d build src/file_name.java
+    ```
+
+- ## Tip
+
+    > IPv4 가 아닌 IPv6() 로 응답하게 변경되어서 기존의  
+    > IPv4 ip로 접근하면 접속할수가 없음.  
+    > [모니터 없이 세팅](https://bbogle2.tistory.com/entry/Raspberry-PI-%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%97%86%EC%9D%B4-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0)  
+    > [raspberrypi.local 에 대한 정보](https://www.2cpu.co.kr/QnA/833645)  
+    > [mDNS로 raspberrypi.local 찾기](https://wikidocs.net/3279)  
+    > 
