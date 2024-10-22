@@ -5,6 +5,22 @@
 		}
 	],
 	"settings": {
-		"java.configuration.updateBuildConfiguration": "interactive"
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"pi4j/junit.jar",
+			"pi4j/pi4j-core.jar",
+			"pi4j/pi4j-core-javadoc.jar",
+			"pi4j/pi4j-core-sources.jar",
+			"pi4j/pi4j-device.jar",
+			"pi4j/pi4j-device-javadoc.jar",
+			"pi4j/pi4j-device-sources.jar",
+			"pi4j/pi4j-example.jar",
+			"pi4j/pi4j-example-javadoc.jar",
+			"pi4j/pi4j-example-sources.jar",
+			"pi4j/pi4j-gpio-extension.jar",
+			"pi4j/pi4j-gpio-extension-javadoc.jar",
+			"pi4j/pi4j-gpio-extension-sources.jar"
+		]
 	}
 }

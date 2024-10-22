@@ -1,0 +1,20 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\junit.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-core.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-core-javadoc.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-core-sources.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-device.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-device-javadoc.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-device-sources.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-example.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-example-javadoc.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-example-sources.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-gpio-extension.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-gpio-extension-javadoc.jar",
+        "c:\\Users Files\\mjk\\Coding\\Projects\\EmbeddedSystem-EuijikKim\\pi4j\\pi4j-gpio-extension-sources.jar"
+    ]
+}

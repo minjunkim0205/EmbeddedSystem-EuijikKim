@@ -24,6 +24,43 @@
 
 ## Note
 
+- ## 클린 설치 방법
+
+    > os sd카드에 굽기  
+    - SSH 세션
+
+
+- ## ssh 세션 종료 방지
+    > [Putty설정](https://blog.naver.com/duehd88/220984889791)
+    
+    ```txt
+    1. LightDM 설정 파일 수정
+    먼저 lightdm의 설정 파일을 편집합니다. 터미널에서 다음 명령어를 입력하세요:
+
+    bash
+    코드 복사
+    sudo nano /etc/lightdm/lightdm.conf
+    해당 파일에서 Seat:* 섹션을 찾거나 추가해야 합니다. 일반적으로 # Seat configuration과 관련된 주석 부분이 있을 텐데, 만약 없다면 해당 섹션을 새로 추가할 수 있습니다.
+
+    아래의 내용을 찾아서, 만약 주석(;) 처리되어 있다면 주석을 제거하고 설정을 추가합니다:
+
+    plaintext
+    코드 복사
+    [Seat:*]
+    xserver-command=X -s 0 dpms
+    이 설정은 X 서버가 화면 보호 모드와 절전 모드를 비활성화하는 데 사용됩니다. -s 0은 화면 보호를 비활성화하고, dpms는 디스플레이 파워 관리 신호(DPMS)를 해제하는 설정입니다.
+
+    파일을 저장하고 종료합니다:
+
+    nano에서 저장: Ctrl + X → Y → Enter
+    2. Raspberry Pi 재부팅
+    설정을 적용하려면 Raspberry Pi를 재부팅해야 합니다:
+
+    bash
+    코드 복사
+    sudo reboot
+    ```
+
 - ## 원격 연결/종료
 
     ```cmd
