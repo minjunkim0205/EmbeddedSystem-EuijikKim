@@ -1,5 +1,3 @@
-package week11;
-
 import org.ws4d.coap.core.rest.CoapResourceServer;
 
 public class CoAP_Server {
@@ -21,7 +19,7 @@ public class CoAP_Server {
 
 		// initialize resource
 		LED led = new LED();
-		Temp_sensor temp_sensor = new Temp_sensor();
+		Temp_Sensor temp_sensor = new Temp_Sensor();
 		//CoapResourceServer에 observe하려는 resource 등록
 		temp_sensor.registerServerListener(resourceServer);
 

@@ -1,5 +1,3 @@
-package week11;
-
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -25,7 +23,7 @@ import org.ws4d.coap.core.messages.api.CoapResponse;
 import org.ws4d.coap.core.rest.CoapData;
 import org.ws4d.coap.core.tools.Encoder;
 
-public class GUI_client extends JFrame implements CoapClient {
+public class GUI_Client extends JFrame implements CoapClient {
 	private static final boolean exitAfterResponse = false;
 	JButton btn_get = new JButton("GET");
 	JButton btn_post = new JButton("POST");
@@ -44,7 +42,7 @@ public class GUI_client extends JFrame implements CoapClient {
 
 	CoapClientChannel clientChannel = null;
 
-	public GUI_client(String serverAddress, int serverPort) {
+	public GUI_Client(String serverAddress, int serverPort) {
 		// ���� ����
 		super("�Ӻ���� �ǽ� GUI client");
 		// ���̾ƿ� ����
@@ -181,7 +179,7 @@ public class GUI_client extends JFrame implements CoapClient {
 			display_text.append("Response: " + response.toString());
 			display_text.setCaretPosition(display_text.getDocument().getLength());
 		}
-		if (GUI_client.exitAfterResponse) {
+		if (GUI_Client.exitAfterResponse) {
 			display_text.append("===END===");
 			System.exit(0);
 		}
@@ -211,7 +209,9 @@ public class GUI_client extends JFrame implements CoapClient {
 
 	public static void main(String[] args) {
 		// ������ ����
-		GUI_client gui = new GUI_client("fe80::8f0a:c05:a3b2:6d8f", CoapConstants.COAP_DEFAULT_PORT);
+		GUI_Client gui = new GUI_Client("10.50.213.97", CoapConstants.COAP_DEFAULT_PORT);
+		//IPv6 : fd78:e29f:cf0c:ee2f:45cc:7fa:4e70:a804
+		//IPv4 : 10.50.213.97
 	}
 
 }
