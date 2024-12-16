@@ -24,7 +24,7 @@ public class DHT11 extends BasicCoapResource {
 
     /* Method */
     private void readDHT11() {
-        final boolean FOR_TEST = true;
+        final boolean FOR_TEST = false;
         if(FOR_TEST){
             this.temperature = 25.5f; // 가상의 온도 값
             this.humidity = 60.0f; // 가상의 습도 값

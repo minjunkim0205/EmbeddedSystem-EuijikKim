@@ -10,4 +10,4 @@
 
 ## Evaluation method
 
-> ?
+> gpio readall : 현제 GPIO 핀의 위치와 상태를 보여줌
