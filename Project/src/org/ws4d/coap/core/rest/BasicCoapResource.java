@@ -157,32 +157,6 @@ public class BasicCoapResource implements CoapResource {
 			channel.sendNotification(response);
 		}
 	}
-	// ==== 추가한 메소드 !! ====
-	public synchronized void changed(String data){
-		if (this.serverListener != null) {
-			this.serverListener.resourceChanged(this);
-		}
-		this.observeSequenceNumber++;
-		if (this.observeSequenceNumber > 0xFFFF) {
-			this.observeSequenceNumber = 0;
-		}
-
-		// notify all observers
-		for (CoapRequest obsRequest : this.observer.values()) {
-			CoapServerChannel channel = (CoapServerChannel) obsRequest.getChannel();
-			CoapResponse response;
-			if (this.reliableNotification == null) {
-				response = channel.createNotification(obsRequest, CoapResponseCode.Content_205,
-						this.observeSequenceNumber);
-			} else {
-				response = channel.createNotification(obsRequest, CoapResponseCode.Content_205,
-						this.observeSequenceNumber, this.reliableNotification);
-			}
-			response.setPayload(new CoapData(Encoder.StringToByte(data), CoapMediaType.text_plain));
-			channel.sendNotification(response);
-		}
-	}
-	// =========================
 
 	public synchronized void registerServerListener(ResourceServer server) {
 		this.serverListener = server;
